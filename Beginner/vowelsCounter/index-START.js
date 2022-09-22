@@ -5,7 +5,9 @@ e.g vowelsCounter('anehizxcv') // will return 3
 
 
 function vowelsCounter(text) {
-    // Code goes here
+    const vowels = 'aeiou';
+
+    return text.toLowerCase().split('').filter(n => vowels.includes(n)).length; 
 }
 
 
